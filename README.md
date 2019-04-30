@@ -34,6 +34,7 @@ a noise
 annoys 
 an oyster 
 ```
+
 ### Chapter 2 - Classes and Objects.
 
 #### Page 38 - The Guessing Game.
@@ -58,4 +59,44 @@ The code about DVD players will not compile because an method is called that isn
 ```
 DVD playing
 DVD recording
+```
+
+### Chapter 3 - Primitives and References.
+
+### Page 62 - Dog Array.
+Typing, compiling and running of a program called [DogArray](https://github.com/SantiagoH3/Java-Projects/blob/master/DogArray/src/Dog.java). The output of this program will be:
+```
+null says uaf uaf!
+last dog's name is Blacky
+Terry says uaf uaf!
+Jordan says uaf uaf!
+Blacky says uaf uaf!
+```
+
+#### Page 63 - Be the Compiler.
+The code with the Books class will not run as intended. It will cause a null-pointer exception at run time. The problem is that an array that can hold references to Books objects is created, but no actual Books objects are then created to be put in the array.  
+
+A fixed version of the code can bee found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/BooksArray/src/Books.java). The output when running the code will be:  
+```
+Remote Office not Required by Jason
+The Java Cookbook by Sue
+El mundo segun Rick by Rick Sanchez
+``` 
+
+The code with the Hobbits class will not run as intended. It will cause a array out of bounds exception at run time. The allowed array indexes to use will in this case be 0 to 2 but the original code will try to place a hobbit at index 3 that does not exist. Array indexes start at 0 and is it a common mistake to forget this.  
+
+A fixed version of the code can bee found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HobbitsPro/src/Hobbits.java). The output when running the code will be:  
+```
+Bilbo is a good Hobbit name
+Frodo is a good Hobbit name
+Sam is a good Hobbit name
+```
+
+#### Page 64 - Code Magnets.
+Rebuilding the program code snippets [here](https://github.com/SantiagoH3/Java-Projects/blob/master/TriangleExtraBonus/src/Triangle.java) to make the Java program work and produce the correct result. The output when running the code will be:
+```
+island = Fiji
+island = Cozumel
+island = Madagascar
+island = Bermuda
 ```
