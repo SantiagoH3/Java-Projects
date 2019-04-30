@@ -41,9 +41,11 @@ The guessing game involves a `game` object and three `player` objects. The game 
 
 Classes:
 
-GuessGame.java (https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/GuessGame.java)
-Player.java (https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/Player.java)
-GameLauncher.java (https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/GameLauncher.java)
+[GuessGame.java] (https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/GuessGame.java)
+
+[Player.java] (https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/Player.java)
+
+[GameLauncher.java] (https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/GameLauncher.java)
 
 #### Page 42 - Be the Compiler.
 The code about tape decks will not compile because an object, called t, is used without being created. A fixed version of the code can be found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/TapeDeck/src/TapeDeck.java). The output of this program will be:  
