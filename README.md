@@ -109,7 +109,7 @@ Dog size is 0
 Dog name is null
 ```
 
-#### Page 87 - Sharpen your pencil  
+#### Page 87 - Sharpen your pencil.
 Assume the method definition given below.  
 ```
 int calcArea(int height, int width) {
@@ -148,7 +148,7 @@ byte h = calcArea(4, 20);  // The result may not fit in an byte variable since i
 int j = calcArea(2, 3, 5);  // There is one argument too many
 ```
 
-#### Page 88 - Be the Compiler
+#### Page 88 - Be the Compiler.
 The [code](https://github.com/SantiagoH3/Java-Projects/blob/master/XCopy/src/XCopy.java) with the class called XCopy will compile.  
 
 The value that is changed inside the method go is just a copy of the value called `orig`. This means that `orig` will remain unchanged and will hold 42, y will be set to twice the value of `orig`.
@@ -171,3 +171,5 @@ Rebuilding the program code snippets [here](https://github.com/SantiagoH3/Java-P
 ```
 result 543345
 ```
+
+### Chapter 4 - Writing a program.
