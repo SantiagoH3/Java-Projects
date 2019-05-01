@@ -38,7 +38,7 @@ an oyster
 ### Chapter 2 - Classes and Objects.
 
 #### Page 38 - The Guessing Game.
-The guessing game involves a `game` object and three `player` objects. The game generates a random number between 0 and 9, and the three player objects try to guess it. You can found the project [here](https://github.com/SantiagoH3/Java-Projects/tree/master/GuessGame/src)
+The guessing game involves a `game` object and three `player` objects. The game generates a random number between `0 and 9`, and the three player objects try to guess it. You can found the project [here](https://github.com/SantiagoH3/Java-Projects/tree/master/GuessGame/src)
 
 Classes:
 
@@ -49,7 +49,7 @@ Classes:
 [GameLauncher.java](https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/GameLauncher.java)
 
 #### Page 42 - Be the Compiler.
-The code about tape decks will not compile because an object, called t, is used without being created. A fixed version of the code can be found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/TapeDeck/src/TapeDeck.java). The output of this program will be:  
+The code about tape decks will not compile because an object, called `t`, is used without being created. A fixed version of the code can be found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/TapeDeck/src/TapeDeck.java). The output of this program will be:  
 ```
 tape playing
 tape recording
@@ -151,14 +151,14 @@ int j = calcArea(2, 3, 5);  // There is one argument too many
 #### Page 88 - Be the Compiler
 The [code](https://github.com/SantiagoH3/Java-Projects/blob/master/XCopy/src/XCopy.java) with the class called XCopy will compile.  
 
-The value that is changed inside the method go is just a copy of the value called orig. This means that orig will remain unchanged and will hold 42, y will be set to twice the value of orig.
+The value that is changed inside the method go is just a copy of the value called `orig`. This means that `orig` will remain unchanged and will hold 42, y will be set to twice the value of `orig`.
 
 The output when running the code will be:  
 ```
 42 84  
 ```
 
-The original code with the class called Clock will not compile. The problem is that the getter function does not return anything according to the declaration. This function should be declared to return a String.  
+The original code with the class called Clock will not compile. The problem is that the getter function doesn't return anything according to the declaration. This function should be declared to return a `String`.  
 
 A fixed version of the code can be found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/Clock/src/Clock.java).  
 
