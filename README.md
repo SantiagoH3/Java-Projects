@@ -166,3 +166,8 @@ The output when running the code will be:
 ```
 time: 1245  
 ```
+#### Page 91 - Pool Puzzle.
+Rebuilding the program code snippets [here](https://github.com/SantiagoH3/Java-Projects/tree/master/Puzzle4/src) to make the Java program work and produce the correct result. The output when running the code will be:
+```
+result 543345
+```
