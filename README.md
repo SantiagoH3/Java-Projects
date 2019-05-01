@@ -100,3 +100,69 @@ island = Cozumel
 island = Madagascar
 island = Bermuda
 ```
+### Chapter 4 - Methods use Instance Variables.
+
+#### Page 84 - PoorDog.
+Typing, compiling and running of a program called [PoorDog](https://github.com/SantiagoH3/Java-Projects/blob/master/PoorDog/src/PoorDogTestDrive.java). The output of this program will be:
+```
+Dog size is 0
+Dog name is null
+```
+
+#### Page 87 - Sharpen your pencil  
+Assume the method definition given below.  
+```
+int calcArea(int height, int width) {
+	return height * width;
+}
+```
+Example of legal statements that use the method are then the following.  
+```
+int a = calcArea(7, 12);  // Okay, the literals 7 and 12 will be interpreted as int values.
+```
+```
+short c = 7;
+calcArea(c, 12);  // Okay because a short will always fit in an int  
+```
+```
+calcArea(2, 3);  // It is okay to not use the return value for anything.
+```
+Statements that would be illegal are for example the following.  
+```
+int d = calcArea(57);  // One of the arguments are missing.
+```
+```
+long t = 42;
+int a = calcArea(t, 12);  // Must cast the long to an int since t may be to big to fit in the int
+```
+```
+int g = calcArea();	 // Both arguments are missing.
+```
+```
+calcArea();  // Both arguments are missing.
+```
+```
+byte h = calcArea(4, 20);  // The result may not fit in an byte variable since it is of type int
+```
+```
+int j = calcArea(2, 3, 5);  // There is one argument too many
+```
+
+#### Page 88 - Be the Compiler
+The [code](https://github.com/SantiagoH3/Java-Projects/blob/master/XCopy/src/XCopy.java) with the class called XCopy will compile.  
+
+The value that is changed inside the method go is just a copy of the value called orig. This means that orig will remain unchanged and will hold 42, y will be set to twice the value of orig.
+
+The output when running the code will be:  
+```
+42 84  
+```
+
+The original code with the class called Clock will not compile. The problem is that the getter function does not return anything according to the declaration. This function should be declared to return a String.  
+
+A fixed version of the code can be found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/Clock/src/Clock.java).  
+
+The output when running the code will be:  
+```
+time: 1245  
+```
