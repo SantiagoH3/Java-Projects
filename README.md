@@ -63,7 +63,7 @@ DVD recording
 
 ### Chapter 3 - Primitives and References.
 
-### Page 62 - Dog Array.
+#### Page 62 - Dog Array.
 Typing, compiling and running of a program called [DogArray](https://github.com/SantiagoH3/Java-Projects/blob/master/DogArray/src/Dog.java). The output of this program will be:
 ```
 null says uaf uaf!
