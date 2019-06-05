@@ -215,4 +215,4 @@ To conclude so will the program when run print out:
 ```
 This is the link of the [code](https://github.com/SantiagoH3/Java-Projects/blob/master/BeTheCompilerChap05/src/Output.java)
 
-### Chapter 5 - Get to know the Java API.
+### Chapter 6 - Get to know the Java API.
