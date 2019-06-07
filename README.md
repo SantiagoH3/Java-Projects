@@ -218,6 +218,12 @@ This is the link of the [code](https://github.com/SantiagoH3/Java-Projects/blob/
 ### Chapter 6 - Get to know the Java API.
 
 
+### Chapter 7 - Inheritance and polymorphism.
+
+
+### Chapter 8 - Interfaces and abstract classes.
+
+
 ### Chapter 9 - Object Construction  
 
 #### Page 252 - Sharpen your pencil  
@@ -292,3 +298,13 @@ gc3 = null;
 ```
 Will compile but will not cause anything new to be up for garbage collection since `gc4` still refers instance that `gc3` used to refer to.  
 
+### Chapter 10 - Numbers and statics.
+
+
+### Chapter 11 - Exception handling.
+
+
+### Chapter 12 - Getting GUI.
+
+
+### Chapter 13 - Using swing.
