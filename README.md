@@ -7,13 +7,13 @@ Discussions and links to code for various exercises from the book Head First Jav
 ### Chapter 1 - A Quick Dip.
 
 #### Page 9 - Writing a class with main.
-Typing, compiling and running of a program called [MyFirstAppJava](https://github.com/SantiagoH3/Java-Projects/blob/master/MyFirstAppJava/src/MyFirstApp.java). The output of this program will be:  
+Typing, compiling and running of a program called [MyFirstAppJava](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter01/MyFirstAppJava/src/MyFirstApp.java). The output of this program will be:  
 ```
 I Rule!
 The World is yours!
 ```
 #### Page 12 - Example of a while loop.
-Typing, compiling and running of a program called [Loopy](https://github.com/SantiagoH3/Java-Projects/blob/master/Loopy/src/Loopy.java). The output of this program will be:  
+Typing, compiling and running of a program called [Loopy](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter01/Loopy/src/Loopy.java). The output of this program will be:  
 ```
 Before the Loop
 In the Loop
@@ -25,10 +25,10 @@ Value of x is 3
 This is after the loop
 ```
 #### Page 14 - Example of a while loop of the Beer Song.
-Typing, compiling and running of a program called [BeerSong](https://github.com/SantiagoH3/Java-Projects/blob/master/BeerSong/src/BeerSong.java). This is the song (https://www.youtube.com/watch?v=FITjBet3dio). I recommend just listening the song and not drinking the 99 beers ... alone.
+Typing, compiling and running of a program called [BeerSong](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter01/BeerSong/src/BeerSong.java). This is the song (https://www.youtube.com/watch?v=FITjBet3dio). I recommend just listening the song and not drinking the 99 beers ... alone.
 
 #### Page 24 - Example of a while loop.
-Typing, compiling and running of a program called [PoolPuzzleOne](https://github.com/SantiagoH3/Java-Projects/blob/master/PoolPuzzleOne/src/PoolPuzzleOne.java). The output of this program will be:
+Typing, compiling and running of a program called [PoolPuzzleOne](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter01/PoolPuzzleOne/src/PoolPuzzleOne.java). The output of this program will be:
 ```
 a noise 
 annoys 
@@ -38,24 +38,24 @@ an oyster
 ### Chapter 2 - Classes and Objects.
 
 #### Page 38 - The Guessing Game.
-The guessing game involves a `game` object and three `player` objects. The game generates a random number between `0 and 9`, and the three player objects try to guess it. You can found the project [here](https://github.com/SantiagoH3/Java-Projects/tree/master/GuessGame/src)
+The guessing game involves a `game` object and three `player` objects. The game generates a random number between `0 and 9`, and the three player objects try to guess it. You can found the project [here](https://github.com/SantiagoH3/Java-Projects/tree/master/HeadFirstJava/Chapter02/GuessGame/src)
 
 Classes:
 
-[GuessGame.java](https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/GuessGame.java)
+[GuessGame.java](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter02/GuessGame/src/GuessGame.java)
 
-[Player.java](https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/Player.java)
+[Player.java](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter02/GuessGame/src/Player.java)
 
-[GameLauncher.java](https://github.com/SantiagoH3/Java-Projects/blob/master/GuessGame/src/GameLauncher.java)
+[GameLauncher.java](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter02/GuessGame/src/GameLauncher.java)
 
 #### Page 42 - Be the Compiler.
-The code about tape decks will not compile because an object, called `t`, is used without being created. A fixed version of the code can be found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/TapeDeck/src/TapeDeck.java). The output of this program will be:  
+The code about tape decks will not compile because an object, called `t`, is used without being created. A fixed version of the code can be found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter02/TapeDeck/src/TapeDeck.java). The output of this program will be:  
 ```
 tape playing
 tape recording
 ```
 
-The code about DVD players will not compile because an method is called that isn't defined in the class DVDPlayer. A fixed version of the code can be found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/DVDPlayer/src/DVDPlayerTestDrive.java). The output of this program will be:  
+The code about DVD players will not compile because an method is called that isn't defined in the class DVDPlayer. A fixed version of the code can be found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter02/DVDPlayer/src/DVDPlayerTestDrive.java). The output of this program will be:  
 ```
 DVD playing
 DVD recording
@@ -64,7 +64,7 @@ DVD recording
 ### Chapter 3 - Primitives and References.
 
 #### Page 62 - Dog Array.
-Typing, compiling and running of a program called [DogArray](https://github.com/SantiagoH3/Java-Projects/blob/master/DogArray/src/Dog.java). The output of this program will be:
+Typing, compiling and running of a program called [DogArray](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter03/DogArray/src/Dog.java). The output of this program will be:
 ```
 null says uaf uaf!
 last dog's name is Blacky
@@ -76,7 +76,7 @@ Blacky says uaf uaf!
 #### Page 63 - Be the Compiler.
 The code with the Books class will not run as intended. It will cause a null-pointer exception at run time. The problem is that an array that can hold references to Books objects is created, but no actual Books objects are then created to be put in the array.  
 
-A fixed version of the code can bee found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/BooksArray/src/Books.java). The output when running the code will be:  
+A fixed version of the code can bee found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter03/BooksArray/src/Books.java). The output when running the code will be:  
 ```
 Remote Office not Required by Jason
 The Java Cookbook by Sue
@@ -85,7 +85,7 @@ El mundo segun Rick by Rick Sanchez
 
 The code with the Hobbits class will not run as intended. It will cause a array out of bounds exception at run time. The allowed array indexes to use will in this case be 0 to 2 but the original code will try to place a hobbit at index 3 that does not exist. Array indexes start at 0 and is it a common mistake to forget this.  
 
-A fixed version of the code can bee found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HobbitsPro/src/Hobbits.java). The output when running the code will be:  
+A fixed version of the code can bee found [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter03/HobbitsPro/src/Hobbits.java). The output when running the code will be:  
 ```
 Bilbo is a good Hobbit name
 Frodo is a good Hobbit name
@@ -93,7 +93,7 @@ Sam is a good Hobbit name
 ```
 
 #### Page 64 - Code Magnets.
-Rebuilding the program code snippets [here](https://github.com/SantiagoH3/Java-Projects/blob/master/TriangleExtraBonus/src/Triangle.java) to make the Java program work and produce the correct result. The output when running the code will be:
+Rebuilding the program code snippets [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter03/TriangleExtraBonus/src/Triangle.java) to make the Java program work and produce the correct result. The output when running the code will be:
 ```
 island = Fiji
 island = Cozumel
@@ -103,7 +103,7 @@ island = Bermuda
 ### Chapter 4 - Methods use Instance Variables.
 
 #### Page 84 - PoorDog.
-Typing, compiling and running of a program called [PoorDog](https://github.com/SantiagoH3/Java-Projects/blob/master/PoorDog/src/PoorDogTestDrive.java). The output of this program will be:
+Typing, compiling and running of a program called [PoorDog](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter04/PoorDog/src/PoorDogTestDrive.java). The output of this program will be:
 ```
 Dog size is 0
 Dog name is null
@@ -149,7 +149,7 @@ int j = calcArea(2, 3, 5);  // There is one argument too many
 ```
 
 #### Page 88 - Be the Compiler.
-The [code](https://github.com/SantiagoH3/Java-Projects/blob/master/XCopy/src/XCopy.java) with the class called XCopy will compile.  
+The [code](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter04/XCopy/src/XCopy.java) with the class called XCopy will compile.  
 
 The value that is changed inside the method go is just a copy of the value called `orig`. This means that `orig` will remain unchanged and will hold 42, y will be set to twice the value of `orig`.
 
@@ -167,7 +167,7 @@ The output when running the code will be:
 time: 1245  
 ```
 #### Page 91 - Pool Puzzle.
-Rebuilding the program code snippets [here](https://github.com/SantiagoH3/Java-Projects/tree/master/Puzzle4/src) to make the Java program work and produce the correct result. The output when running the code will be:
+Rebuilding the program code snippets [here](https://github.com/SantiagoH3/Java-Projects/tree/master/HeadFirstJava/Chapter04/Puzzle4/src) to make the Java program work and produce the correct result. The output when running the code will be:
 ```
 result 543345
 ```
@@ -175,7 +175,7 @@ result 543345
 ### Chapter 5 - Writing a program.
 
 #### DotCom Game.
-We are against the computer, but unlike the real Battleship game, in this one you do not place any ships of your own. Instead, our job is to sink the computer's ships in the fewest number of guesses. In the next [project](https://github.com/SantiagoH3/Java-Projects/tree/master/DotCom/src) I have the way to solve and run the program correctly, then the classes and logic of the program are shown.
+We are against the computer, but unlike the real Battleship game, in this one you do not place any ships of your own. Instead, our job is to sink the computer's ships in the fewest number of guesses. In the next [project](https://github.com/SantiagoH3/Java-Projects/tree/master/HeadFirstJava/Chapter05/DotCom/src) I have the way to solve and run the program correctly, then the classes and logic of the program are shown.
 This is just an example:
 ```
 enter a number  1
@@ -213,7 +213,7 @@ To conclude so will the program when run print out:
 ```
 13 15 x = 6
 ```
-This is the link of the [code](https://github.com/SantiagoH3/Java-Projects/blob/master/BeTheCompilerChap05/src/Output.java)
+This is the link of the [code](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter05/BeTheCompilerChap05/src/Output.java)
 
 ### Chapter 6 - Get to know the Java API.
 
@@ -227,7 +227,7 @@ This is the link of the [code](https://github.com/SantiagoH3/Java-Projects/blob/
 ### Chapter 9 - Object Construction  
 
 #### Page 252 - Sharpen your pencil  
-Example code that illustrates constructor chaining. We have a class Hippo that inherits from another class called Animal. When a new Hippo is created so will the Animal constructor be run before the Hippo constructor. This can be verified by running the this [test program](https://github.com/SantiagoH3/Java-Projects/blob/master/TestHippo/src/TestHippo.java) that uses the classes [Hippo](https://github.com/SantiagoH3/Java-Projects/blob/master/TestHippo/src/Hippo.java) and [Animal](https://github.com/SantiagoH3/Java-Projects/blob/master/TestHippo/src/Animal.java).  
+Example code that illustrates constructor chaining. We have a class Hippo that inherits from another class called Animal. When a new Hippo is created so will the Animal constructor be run before the Hippo constructor. This can be verified by running the this [test program](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter09/TestHippo/src/TestHippo.java) that uses the classes [Hippo](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter09/TestHippo/src/Hippo.java) and [Animal](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter09/TestHippo/src/Animal.java).  
 
 #### Page 266 - Be the Garbage collector
 Assume the following code:
@@ -297,6 +297,8 @@ Will compile and will cause the `GC` instance that `gc1` used to refer to be up 
 gc3 = null;
 ```
 Will compile but will not cause anything new to be up for garbage collection since `gc4` still refers instance that `gc3` used to refer to.  
+
+This is the link of the [code](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter09/GC/src/GarbageCollector.java)
 
 ### Chapter 10 - Numbers and statics.
 
