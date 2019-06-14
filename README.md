@@ -217,12 +217,94 @@ This is the link of the [code](https://github.com/SantiagoH3/Java-Projects/blob/
 
 ### Chapter 6 - Get to know the Java API.
 
+#### DotCom Game.
+The DotCom Game full version, in this chapter I finished the project created in the last chapter.
+In the final version of the DotCom [class](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter06/DotCom06/src/DotCom.java) we can found the next code:
+
+A setter method that updates the DotCom's location (Random location provided by the GameHelper placeDotCom() method)
+```Java
+public void setLocationCells(ArrayList<String> loc)
+        {
+            locationCells = loc;
+        }
+```
+The ArrayList indexOf() method in action. If the user guess in one of the entries in the ArrayList, indexOf() will return its ArrayList location. If not, indexOf() will return -1.
+```int index = locationCells.indexOf(userInput);```
+
+Using the isEmpty() method to see if all locations have been guessed.
+```if (locationCells.isEmpty())```
+
+In the java [class](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter06/DotCom06/src/DotComBust.java) called DotComBust we can found the next code:
+
+Make an ArrayList of DotCom objects (in other words, a list that will hold only DotCom objects.
+``` private ArrayList<DotCom> dotComsList = new ArrayList<DotCom>();```
+
+Make three DotCom objects, giving names, and stick in the ArrayList.
+```
+DotCom one = new DotCom();
+            one.setName("Pets.com");
+            DotCom two = new DotCom();
+            two.setName("eToys.com");
+            DotCom three = new DotCom();
+            three.setName("Go2.com");
+            dotComsList.add(one);
+            dotComsList.add(two);
+dotComsList.add(three);
+```
+Call the setter method on this DotCom to give in the location you just got from the helper.
+``` dotComSet.setLocationCells(newLocation);```
+
+Call the next methods:
+``` checkUserGuess(userGuess);```
+``` finishGame();```
 
 ### Chapter 7 - Inheritance and polymorphism.
 
+#### Page 193 - Be the Compiler.
+The [code](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter07/MonsterTestDrive/src/MonsterTestDrive.java) with the class called MonsterTestDrive will compile.
+```Java
+class Monster {
+    boolean frighten(int d) {
+        System.out.println("arrrgh");
+        return true;
+    }
+}
+```
+This implementation of frighten has been written with a boolean return type and an integer parameter. When you extend this class, the child class inherits this method. Say I create another child class [Vampire](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter07/MonsterTestDrive/src/MonsterTestDrive.java#L19)
+
+At first glance this class has no methods or attributes associated with it; but in reality, due to class inheritance it implicitly has the frighten method declared in its parent class. This is what the compiler sees:
+```Java
+class Vampire extends monster{
+      boolean frighten(int d){ // Method **from** the parent class
+      //This is implicitly built into the subclass due to inheritance
+           System.out.println("arrah");
+           return false;
+      }
+ }
+ ```
+However, these methods are not set in stone. Within the child class it is possible to override parent class methods. This is what you have done in your vampier and dragon subclasses. This is an override because your methods have the same return type, same method name, and same parameters.
+```Java
+class Dragon extends Monster {
+    boolean frighten(int degree) {
+        System.out.println("breath fire");
+        return true;
+    }
+}
+```
+
+#### Page 194 - Pool Puzzle.
+In this project I complete the job using the snippets from the pool and place them into the blank lines in the code.
+You can found the complete code [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter07/TestBoat/src/TestBoat.java)
 
 ### Chapter 8 - Interfaces and abstract classes.
 
+#### Page 232 - Pool Puzzle.
+Typing, compiling and running of a program called [PoolPuzzle](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter08/PoolPuzzleCH08/src/Puzzle.java). The output of this program will be:  
+```
+5 class Acts
+7 class Clowns
+7 class Puzzle
+```
 
 ### Chapter 9 - Object Construction  
 
@@ -302,11 +384,70 @@ This is the link of the [code](https://github.com/SantiagoH3/Java-Projects/blob/
 
 ### Chapter 10 - Numbers and statics.
 
+#### Page 310 - Be the Compiler.
+Use the possible output if this [code](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter10/BeTheCompilerCH10/src/StaticTests.java) can compile.
+
+StaticSuper() is a constructor, and must have() in its signature. Notice that as the output below demonstrates, the static blocks for both classes run before either of the constructors run.
+```Java
+StaticSuper(){
+        System.out.println("Super constructor");
+}
+```
+
+#### Page 312 - Code Manegts.
+In the following project the code fragments are reconstructed to make a program that produces the following result:
+```
+full moon on Fri Feb 06 04:09:02 MST 2004
+full moon on Sat Mar 06 16:37:50 MST 2004
+full moon on Mon Apr 05 06:06:38 MDT 2004
+full moon on Tue May 04 18:35:26 MDT 2004
+full moon on Thu Jun 03 07:04:14 MDT 2004
+full moon on Fri Jul 02 19:33:02 MDT 2004
+full moon on Sun Aug 01 08:01:50 MDT 2004
+```
+This in order to know the dates in which there was a full moon, which occur every 29.52 days approximantly. You can found the code [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter10/FullMoons/src/FullMoons.java)
 
 ### Chapter 11 - Exception handling.
 
+#### Page 342 - A sound application.
+In this [app](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter11/MiniMiniMusicApp/src/MiniMiniMusicApp.java) we can run and hear the sound of someone playing a single note of a piano.
+
+First of all I import the `midi package`:
+```import javax.sound.midi.*;```
+
+Get a sequencer and open it: ``` Sequencer sequencer = MidiSystem.getSequencer();```
+
+Ask the sequence for a Track. Track lives in the Sequence, and the `MIDI` data lives in the Track:
+``` Track track = seq.createTrack();```
+
+Put some MidiEvents into the Track:
+```
+ShortMessage a = new ShortMessage();
+            a.setMessage(144, 1, 44, 100);
+            MidiEvent noteOn = new MidiEvent(a, 1); // <-- means at tick one, the above event happens
+            track.add(noteOn);
+
+            ShortMessage b = new ShortMessage();
+            b.setMessage(128, 1, 44, 100);
+            MidiEvent noteOff = new MidiEvent(b, 16); // <-- means at tick one, the above event happens
+track.add(noteOff);
+```
+Start() the Sequencer(like pushing PLAY eaea): ``` sequencer.start();```
+
+##### Page 346 - Change the instrument and note.
+This version still plays just a single note, but you get to use command-line arguments to change the instrument and note, you can found the code [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter11/MiniMiniMusicCMDLine/src/MiniMiniMusicCMDLine.java).
 
 ### Chapter 12 - Getting GUI.
 
+#### Page 379 - Two buttons.
+Creating our first GUI project with two buttons [project](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter12/TwoButtons/src/TwoButtons.java).
+
+#### Page 392 - Mini Music Player.
+Finish the project of the Mini Music, using some packages for complete this project, also using a `for` like a piano to create events and call or new makeEvent() to make a message and event, then the result(the MidiEvent returned from makeEvent()) to the Track.
+You can found the all code [here](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter12/MiniMusicPlayer3/src/MiniMusicPlayer3.java)
 
 ### Chapter 13 - Using swing.
+
+#### Page 418 - Code Chicken.
+Create the BeatBox project using the GUI with some checkboxes, labels, etc.
+In the next [link](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter13/BeatBox/src/BeatBox.java) you can found the code of this project.
