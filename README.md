@@ -451,3 +451,9 @@ You can found the all code [here](https://github.com/SantiagoH3/Java-Projects/bl
 #### Page 418 - Code Chicken.
 Create the BeatBox project using the GUI with some checkboxes, labels, etc.
 In the next [link](https://github.com/SantiagoH3/Java-Projects/blob/master/HeadFirstJava/Chapter13/BeatBox/src/BeatBox.java) you can found the code of this project.
+
+- - -
+
+### Interesting Java facts
+
+In the next [link](https://github.com/SantiagoH3/Java-Projects/blob/master/InterestingJavaFacts.md) you can found some definitions, information, tables, related to the book, all with the purpose of knowing also the concept or the theory of the topics seen.
